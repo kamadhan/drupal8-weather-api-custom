@@ -1,0 +1,4 @@
+name: Current Weather
+description: To display the current weather based on city
+type: module
+core: 8.x

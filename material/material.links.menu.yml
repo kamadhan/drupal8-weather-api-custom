@@ -1,0 +1,27 @@
+material.weather_delhi:
+  title:  New Delhi  
+  menu_name:  main
+  route_name: material.weather
+  route_parameters: {city_id: 1261481}
+  weight: 300
+
+material.weather_mumbai:
+  title:  Mumbai
+  menu_name:  main
+  route_name: material.weather
+  route_parameters: {city_id: 1275339}
+  weight: 200
+
+material.weather_chennai:
+  title:  Chennai
+  menu_name:  main
+  route_name: material.weather
+  route_parameters: {city_id: 1264527}
+  weight: 100
+
+material.weather_kolkata:
+  title:  Kolkata
+  menu_name:  main
+  route_name: material.weather
+  route_parameters: {city_id: 1275004}
+  weight: 400

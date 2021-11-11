@@ -1,0 +1,6 @@
+material.weather:
+  path: '/weather/{city_id}'
+  defaults:
+    _controller: '\Drupal\material\Controller\MaterialController::currentWeather'    
+  requirements:
+    _permission: 'access content'	
