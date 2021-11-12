@@ -1,10 +1,13 @@
-
-<div style="font-weight:bold">{{items.name}}</div>
-<div>{{items.curday}}</div>
-<div>{{items.curdate}}</div>
-<div style="font-weight:bold">{{items.type|capitalize}}</div>
-<br /></br />
-<div><b>Temperature</b></div>
-<div><img src="{{items.imageUrl}}" /> <b>Max: </b>{{items.maxTemp}}&deg;C  <b>Min: </b>{{items.minTemp}}&deg;C</div>
-<div><b>Humidity: </b>{{items.humidity}}</div>
-<div><b>Wind: </b> {{items.wind}}</div>
+{% if items.name %}
+	<div style="font-weight:bold">{{items.name}}</div>
+	<div>{{items.curday}}</div>
+	<div>{{items.curdate}}</div>
+	<div style="font-weight:bold">{{items.type|capitalize}}</div>
+	<br /></br />
+	<div><b>Temperature</b></div>
+	<div><img src="{{items.imageUrl}}" width="80" /><br /> <b>Max: </b>{{items.maxTemp|round}}&deg;C  <b>Min: </b>{{items.minTemp|round}}&deg;C</div>
+	<div><b>Humidity: </b>{{items.humidity}}</div>
+	<div><b>Wind: </b> {{items.wind}}</div>	
+{% else %}
+    API Response is invalid.
+{% endif %}
